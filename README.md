@@ -1,5 +1,9 @@
 # ww-smtp-settings
 
+[![CI](https://github.com/sjinks/ww-smtp-settings/actions/workflows/ci.yaml/badge.svg)](https://github.com/sjinks/ww-smtp-settings/actions/workflows/ci.yaml)
+[![Static Code Analysis](https://github.com/sjinks/ww-smtp-settings/actions/workflows/static-code-analysis.yml/badge.svg)](https://github.com/sjinks/ww-smtp-settings/actions/workflows/static-code-analysis.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sjinks_ww-smtp-settings&metric=alert_status)](https://sonarcloud.io/dashboard?id=sjinks_ww-smtp-settings)
+
 A WordPress plugin to send emails via SMTP
 
 ## Installation
