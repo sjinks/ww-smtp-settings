@@ -21,7 +21,8 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: "7.4"
-          tools: wp-coding-standards/wpcs, dealerdirect/phpcodesniffer-composer-installer, phpcompatibility/phpcompatibility-wp
+          coverage: none
+          tools: automattic/vipwpcs, phpcompatibility/phpcompatibility-wp
 
       - name: Add error matcher
         run: echo "::add-matcher::$(pwd)/.github/checkstyle-problem-matcher.json"
