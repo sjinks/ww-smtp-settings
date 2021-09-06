@@ -33,7 +33,7 @@
 		"johnpbloch/wordpress-core": "^5.8",
 		"php-stubs/wordpress-stubs": "^5.7",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
-		"phpunit/phpunit": "^7",
+		"phpunit/phpunit": "^9",
 		"psalm/plugin-phpunit": "^0.16.1",
 		"vimeo/psalm": "^4.7",
 		"wildwolf/phpunit7-php8-helper": "^1.0",
