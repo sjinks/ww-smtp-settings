@@ -1,0 +1,152 @@
+#: ../views/options.php:14
+msgid "Save settings"
+msgstr ""
+
+#: ../views/options.php:21
+msgid "Test Your Settings"
+msgstr ""
+
+#: ../views/options.php:23
+msgid "Send a test email using the saved settings."
+msgstr ""
+
+#: ../views/options.php:28
+msgid "To"
+msgstr ""
+
+#: ../views/options.php:32
+msgid "Subject"
+msgstr ""
+
+#: ../views/options.php:36
+msgid "Message"
+msgstr ""
+
+#: ../views/options.php:42
+msgid "Send Test Email"
+msgstr ""
+
+#: ../inc/class-admin.php:44 ../inc/class-adminsettings.php:84
+msgid "SMTP Settings"
+msgstr ""
+
+#: ../inc/class-admin.php:56
+msgid "Settings"
+msgstr ""
+
+#: ../inc/class-admin.php:101
+#, php-format
+msgid "Test Email from %s"
+msgstr ""
+
+#: ../inc/class-admin.php:109
+#, php-format
+msgid "Test message from %1$s (%2$s)"
+msgstr ""
+
+#: ../inc/class-ajax.php:21
+msgid "The nonce has expired. Please reload the page and try again"
+msgstr ""
+
+#: ../inc/class-ajax.php:31
+msgid "Message has been sent."
+msgstr ""
+
+#: ../inc/class-adminsettings.php:46
+msgid "General Settings"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:53
+msgid "Enable plugin"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:91
+msgid "SMTP Host"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:99
+msgid ""
+"Either a single hostname or multiple semicolon-delimited hostnames.<br/>You "
+"can also specify a different port for each host by using this format: "
+"<code>smtp1.example.com:25;smtp2.example.com</code>.<br/>You can also "
+"specify encryption type, for example: <code>tls://smtp1.example.com:587;"
+"ssl://smtp2.example.com:465</code><br/>Hosts will be tried in order."
+msgstr ""
+
+#: ../inc/class-adminsettings.php:107
+msgid "SMTP Port"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:121
+msgid "SMTP Encryption"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:128
+msgid "None"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:129
+msgid "SSL"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:130
+msgid "TLS"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:137
+msgid "Sender (Return-Path)"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:144
+msgid ""
+"The Return-Path header is an SMTP email source address (SMTP MAIL FROM) used "
+"to process the bounces that occur in your emails. The default value is the "
+"sender's email address."
+msgstr ""
+
+#: ../inc/class-adminsettings.php:150
+msgid "Sender Hostname (SMTP HELO)"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:158
+#, php-format
+msgid ""
+"Used to identify the domain name of the sending host to SMTP. The default "
+"value is <code>%s</code>"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:167
+msgid "Sender Settings"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:174
+msgid "Override sender email address"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:186
+msgid "Override sender name"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:197
+msgid "Set Reply-To email address"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:209
+msgid "Set Reply-To name"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:223
+msgid "SMTP Authentication"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:230
+msgid "SMTP Username"
+msgstr ""
+
+#: ../inc/class-adminsettings.php:236
+msgid "Leave blank to disable SMTP authentication."
+msgstr ""
+
+#: ../inc/class-adminsettings.php:243
+msgid "SMTP Password"
+msgstr ""

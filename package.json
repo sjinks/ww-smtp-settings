@@ -1,0 +1,16 @@
+{
+  "name": "ww-smtp-settings",
+  "description": "",
+  "private": true,
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "Volodymyr Kolesnykov <volodymyr@wildwolf.name> (https://wildwolf.name/)",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.56.2",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  }
+}
