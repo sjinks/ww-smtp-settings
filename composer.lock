@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3f170bea1e887e6208f5a2ab1523160",
+    "content-hash": "b5b604130d5847bb2670a7739c710b2b",
     "packages": [
         {
             "name": "composer/installers",
@@ -4109,6 +4109,46 @@
                 "source": "https://github.com/webmozart/path-util/tree/2.3.0"
             },
             "time": "2015-12-17T08:42:14+00:00"
+        },
+        {
+            "name": "wildwolf/phpunit7-php8-helper",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sjinks/phpunit7-php8-helper.git",
+                "reference": "d74275216e4c105820f6d6a48c8eff3070ee7b03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sjinks/phpunit7-php8-helper/zipball/d74275216e4c105820f6d6a48c8eff3070ee7b03",
+                "reference": "d74275216e4c105820f6d6a48c8eff3070ee7b03",
+                "shasum": ""
+            },
+            "require": {
+                "phpunit/php-token-stream": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Volodymyr Kolesnykov",
+                    "email": "volodymyr@wildwolf.name"
+                }
+            ],
+            "description": "A helper for PHPUnit 7 to generate code coverage under PHP 8",
+            "support": {
+                "issues": "https://github.com/sjinks/phpunit7-php8-helper/issues",
+                "source": "https://github.com/sjinks/phpunit7-php8-helper/tree/1.0.0"
+            },
+            "time": "2021-09-06T08:37:37+00:00"
         },
         {
             "name": "wildwolf/wordpress-test-library-stubs",

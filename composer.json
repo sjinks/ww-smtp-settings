@@ -3,6 +3,11 @@
 	"type": "wordpress-plugin",
 	"description": "Send emails via SMTP in WordPress",
 	"keywords": [
+		"wordpress",
+		"smtp",
+		"wordpress plugin",
+		"plugin",
+		"email"
 	],
 	"license": "MIT",
 	"authors": [
@@ -31,6 +36,7 @@
 		"phpunit/phpunit": "^7",
 		"psalm/plugin-phpunit": "^0.16.1",
 		"vimeo/psalm": "^4.7",
+		"wildwolf/phpunit7-php8-helper": "^1.0",
 		"wildwolf/wordpress-test-library-stubs": "5.8.0.1",
 		"wp-coding-standards/wpcs": "^2.3",
 		"wp-phpunit/wp-phpunit": "^5.8",
