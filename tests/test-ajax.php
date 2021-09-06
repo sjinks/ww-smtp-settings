@@ -60,18 +60,8 @@ class Test_Ajax extends WP_Ajax_UnitTestCase /* NOSONAR */ {
 			unset( $e );
 		}
 
-		$response = json_decode( $this->_last_response, true, 512, JSON_THROW_ON_ERROR );
-		self::assertIsArray( $response );
-		self::assertArrayHasKey( 'success', $response );
-		self::assertFalse( $response['success'] );
-
-		$mailer = tests_retrieve_phpmailer_instance();
-		self::assertInstanceOf( MockPHPMailer::class, $mailer );
-
-		$mail = $mailer->get_sent();
-		self::assertFalse( $mail );
-
-		self::assertSame( 0, did_action( 'wp_mail_failed' ) );
+		$this->check_response( true );
+		$this->check_no_mail_sent( false );
 	}
 
 	public function test_wp_ajax_smtp_test_email_fail(): void {
@@ -84,17 +74,24 @@ class Test_Ajax extends WP_Ajax_UnitTestCase /* NOSONAR */ {
 			unset( $e );
 		}
 
+		$this->check_response( false );
+		$this->check_no_mail_sent( true );
+	}
+
+	private function check_response( bool $success ): void {
 		$response = json_decode( $this->_last_response, true, 512, JSON_THROW_ON_ERROR );
 		self::assertIsArray( $response );
 		self::assertArrayHasKey( 'success', $response );
-		self::assertFalse( $response['success'] );
+		self::assertSame( $success, $response['success'] );
+	}
 
+	private function check_no_mail_sent( bool $should_have_triggered_hook ): void {
 		$mailer = tests_retrieve_phpmailer_instance();
 		self::assertInstanceOf( MockPHPMailer::class, $mailer );
 
 		$mail = $mailer->get_sent();
 		self::assertFalse( $mail );
 
-		self::assertSame( 1, did_action( 'wp_mail_failed' ) );
+		self::assertSame( $should_have_triggered_hook ? 1 : 0, did_action( 'wp_mail_failed' ) );
 	}
 }
