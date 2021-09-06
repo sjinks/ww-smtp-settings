@@ -151,16 +151,16 @@
         },
         {
             "name": "wildwolf/singleton-trait",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sjinks/php-singleton-trait.git",
-                "reference": "c9e17d08eb99c06427d085758abd323342e3a51b"
+                "reference": "85bd69b27383a7ccce25202e0f8a9f69889dbcb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sjinks/php-singleton-trait/zipball/c9e17d08eb99c06427d085758abd323342e3a51b",
-                "reference": "c9e17d08eb99c06427d085758abd323342e3a51b",
+                "url": "https://api.github.com/repos/sjinks/php-singleton-trait/zipball/85bd69b27383a7ccce25202e0f8a9f69889dbcb9",
+                "reference": "85bd69b27383a7ccce25202e0f8a9f69889dbcb9",
                 "shasum": ""
             },
             "require-dev": {
@@ -184,11 +184,16 @@
                 }
             ],
             "description": "Singleton Trait",
+            "keywords": [
+                "php",
+                "singleton",
+                "trait"
+            ],
             "support": {
                 "issues": "https://github.com/sjinks/php-singleton-trait/issues",
-                "source": "https://github.com/sjinks/php-singleton-trait/tree/1.0.3"
+                "source": "https://github.com/sjinks/php-singleton-trait/tree/1.0.4"
             },
-            "time": "2021-09-06T00:13:42+00:00"
+            "time": "2021-09-06T08:56:03+00:00"
         }
     ],
     "packages-dev": [
@@ -4112,16 +4117,16 @@
         },
         {
             "name": "wildwolf/phpunit7-php8-helper",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sjinks/phpunit7-php8-helper.git",
-                "reference": "d74275216e4c105820f6d6a48c8eff3070ee7b03"
+                "reference": "53815620189bcd13a3b8f7a3b58a5bf69c925fdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sjinks/phpunit7-php8-helper/zipball/d74275216e4c105820f6d6a48c8eff3070ee7b03",
-                "reference": "d74275216e4c105820f6d6a48c8eff3070ee7b03",
+                "url": "https://api.github.com/repos/sjinks/phpunit7-php8-helper/zipball/53815620189bcd13a3b8f7a3b58a5bf69c925fdc",
+                "reference": "53815620189bcd13a3b8f7a3b58a5bf69c925fdc",
                 "shasum": ""
             },
             "require": {
@@ -4144,11 +4149,19 @@
                 }
             ],
             "description": "A helper for PHPUnit 7 to generate code coverage under PHP 8",
+            "keywords": [
+                "helper",
+                "php8",
+                "phpunit",
+                "phpunit code coverage",
+                "phpunit-code-coverage",
+                "phpunit7"
+            ],
             "support": {
                 "issues": "https://github.com/sjinks/phpunit7-php8-helper/issues",
-                "source": "https://github.com/sjinks/phpunit7-php8-helper/tree/1.0.0"
+                "source": "https://github.com/sjinks/phpunit7-php8-helper/tree/1.0.1"
             },
-            "time": "2021-09-06T08:37:37+00:00"
+            "time": "2021-09-06T08:53:38+00:00"
         },
         {
             "name": "wildwolf/wordpress-test-library-stubs",
