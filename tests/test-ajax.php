@@ -60,7 +60,7 @@ class Test_Ajax extends WP_Ajax_UnitTestCase /* NOSONAR */ {
 			unset( $e );
 		}
 
-		$this->check_response( true );
+		$this->check_response( false );
 		$this->check_no_mail_sent( false );
 	}
 
