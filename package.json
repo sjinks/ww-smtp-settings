@@ -1,6 +1,6 @@
 {
   "name": "ww-smtp-settings",
-  "description": "",
+  "description": "A WordPress plugin to send emails via SMTP",
   "private": true,
   "version": "1.0.0",
   "keywords": [],
@@ -12,5 +12,13 @@
   },
   "scripts": {
     "build": "rollup -c"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjinks/ww-smtp-settings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sjinks/ww-smtp-settings/issues"
+  },
+  "homepage": "https://github.com/sjinks/ww-smtp-settings#readme"
 }
