@@ -153,7 +153,7 @@ final class AdminSettings {
 			$settings_section,
 			[
 				'type'      => 'email',
-				'label_for' => 'sender',
+				'label_for' => 'hostname',
 				// translators: %s is the default hostname
 				'help'      => sprintf( __( 'Used to identify the domain name of the sending host to SMTP. The default value is <code>%s</code>', 'ww-smtp' ), $default_hostname ),
 			]
