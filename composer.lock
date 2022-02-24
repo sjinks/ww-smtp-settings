@@ -4262,16 +4262,16 @@
         },
         {
             "name": "wildwolf/wordpress-test-library-stubs",
-            "version": "5.9.0",
+            "version": "5.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sjinks/wordpress-test-library-stubs.git",
-                "reference": "a9747c3e98244d711e40bbc1538c688bdbfb03e4"
+                "reference": "39caae643109bd617a1300c197fb88e2e0105e72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sjinks/wordpress-test-library-stubs/zipball/a9747c3e98244d711e40bbc1538c688bdbfb03e4",
-                "reference": "a9747c3e98244d711e40bbc1538c688bdbfb03e4",
+                "url": "https://api.github.com/repos/sjinks/wordpress-test-library-stubs/zipball/39caae643109bd617a1300c197fb88e2e0105e72",
+                "reference": "39caae643109bd617a1300c197fb88e2e0105e72",
                 "shasum": ""
             },
             "require-dev": {
@@ -4292,9 +4292,9 @@
             "description": "Stubs for WordPress test library",
             "support": {
                 "issues": "https://github.com/sjinks/wordpress-test-library-stubs/issues",
-                "source": "https://github.com/sjinks/wordpress-test-library-stubs/tree/5.9.0"
+                "source": "https://github.com/sjinks/wordpress-test-library-stubs/tree/5.9.1"
             },
-            "time": "2022-01-26T13:47:29+00:00"
+            "time": "2022-02-24T07:01:44+00:00"
         },
         {
             "name": "wp-coding-standards/wpcs",
