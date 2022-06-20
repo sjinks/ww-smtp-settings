@@ -43,7 +43,10 @@
 		"yoast/phpunit-polyfills": "^1.0"
 	},
 	"config": {
-		"sort-packages": true
+		"sort-packages": true,
+		"platform": {
+			"php": "7.4"
+		}
 	},
 	"scripts": {
 		"phpcs": "phpcs",
