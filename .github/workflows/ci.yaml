@@ -13,6 +13,8 @@ concurrency:
 
 jobs:
   test:
+    permissions:
+      contents: read
     name: Run tests
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
@@ -81,6 +83,8 @@ jobs:
           WP_MULTISITE: ${{ matrix.wpmu }}
 
   build:
+    permissions:
+      contents: read
     name: Build JS Files
     runs-on: ubuntu-latest
     steps:
