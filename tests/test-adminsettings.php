@@ -9,10 +9,7 @@ use WildWolf\WordPress\SMTP\Settings;
  * @uses \WildWolf\WordPress\SMTP\InputFactory
  */
 class Test_AdminSettings extends WP_UnitTestCase /* NOSONAR */ {
-	/**
-	 * @return void
-	 */
-	public function setUp() {
+	public function setUp(): void {
 		parent::setUp();
 		AdminSettings::instance()->register_settings();
 	}
@@ -46,6 +43,15 @@ class Test_AdminSettings extends WP_UnitTestCase /* NOSONAR */ {
 		}
 	}
 
+	private static function assert_same_sets( $expected, $actual, $message = '' ) {
+		self::assertIsArray( $expected, $message . ' Expected value must be an array.' );
+		self::assertIsArray( $actual, $message . ' Value under test is not an array.' );
+
+		sort( $expected );
+		sort( $actual );
+		self::assertSame( $expected, $actual, $message );
+	}
+
 	/**
 	 * @uses \WildWolf\WordPress\SMTP\Settings
 	 */
@@ -68,6 +74,6 @@ class Test_AdminSettings extends WP_UnitTestCase /* NOSONAR */ {
 			}
 		}
 
-		$this->assertSameSets( $expected_fields, $actual_fields );
+		self::assert_same_sets( $expected_fields, $actual_fields );
 	}
 }

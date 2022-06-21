@@ -12,10 +12,7 @@ use WildWolf\WordPress\SMTP\Settings;
  * @covers \WildWolf\WordPress\SMTP\Plugin
  */
 class Test_Plugin extends WP_UnitTestCase /* NOSONAR */ {
-	/**
-	 * @return void
-	 */
-	public function setUp() {
+	public function setUp(): void {
 		parent::setUp();
 		self::assertTrue( reset_phpmailer_instance() );
 	}

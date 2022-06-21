@@ -9,10 +9,7 @@ use WildWolf\WordPress\SMTP\Ajax;
  * @uses \WildWolf\WordPress\SMTP\Admin::get_test_body
  */
 class Test_Ajax extends WP_Ajax_UnitTestCase /* NOSONAR */ {
-	/**
-	 * @return void
-	 */
-	public function setUp() {
+	public function setUp(): void {
 		parent::setUp();
 		self::assertTrue( reset_phpmailer_instance() );
 
