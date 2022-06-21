@@ -5,8 +5,11 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: csc-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
+permissions:
+  contents: read
 
 jobs:
   codestyle:
@@ -23,6 +26,8 @@ jobs:
           php-version: "7.4"
           coverage: none
           tools: automattic/vipwpcs, phpcompatibility/phpcompatibility-wp
+        env:
+          fail-fast: 'true'
 
       - name: Add error matcher
         run: echo "::add-matcher::$(pwd)/.github/checkstyle-problem-matcher.json"

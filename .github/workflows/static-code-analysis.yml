@@ -5,16 +5,19 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: sca-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 env:
-  PHP_VERSION: "7.4"
+  PHP_VERSION: "8.0"
 
 jobs:
   prepare:
     runs-on: ubuntu-latest
-    name: Analyze the code with Psalm
+    name: Psalm
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     steps:
       - name: Check out source code
@@ -26,20 +29,8 @@ jobs:
           coverage: none
           php-version: ${{ env.PHP_VERSION }}
 
-      - name: Get composer cache directory
-        id: composer-cache
-        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
-
-      - name: Cache Composer packages
-        uses: actions/cache@v3.0.4
-        with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-php-
-
-      - name: Install dependencies
-        run: composer install --prefer-dist --no-progress --no-interaction
+      - name: Install PHP dependencies
+        uses: ramsey/composer-install@2.1.0
 
       - name: Create node_modules directory
         run: mkdir -p node_modules
