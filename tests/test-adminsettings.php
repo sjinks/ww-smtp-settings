@@ -9,10 +9,7 @@ use WildWolf\WordPress\SMTP\Settings;
  * @uses \WildWolf\WordPress\SMTP\InputFactory
  */
 class Test_AdminSettings extends WP_UnitTestCase /* NOSONAR */ {
-	/**
-	 * @return void
-	 */
-	public function setUp() {
+	public function setUp(): void {
 		parent::setUp();
 		AdminSettings::instance()->register_settings();
 	}

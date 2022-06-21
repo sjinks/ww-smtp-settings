@@ -11,10 +11,7 @@ class Test_InputFactory extends WP_UnitTestCase /* NOSONAR */ {
 	/** @var InputFactory */
 	private $input_factory;
 
-	/**
-	 * @return void
-	 */
-	public function setUp() {
+	public function setUp(): void {
 		$this->input_factory = new InputFactory( 'option', [ 'somekey' => 'somevalue' ] );
 	}
 

@@ -8,10 +8,7 @@ use WildWolf\WordPress\SMTP\Settings;
  * @uses \WildWolf\WordPress\SMTP\SettingsValidator
  */
 class Test_Settings extends WP_UnitTestCase /* NOSONAR */ {
-	/**
-	 * @return void
-	 */
-	public function setUp() {
+	public function setUp(): void {
 		parent::setUp();
 		delete_option( Settings::OPTION_KEY );
 		Settings::instance()->refresh();
