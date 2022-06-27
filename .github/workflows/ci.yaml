@@ -108,7 +108,7 @@ jobs:
           phpunit --order-by=random ${OPTIONS}
 
       - name: Upload coverage report
-        uses: codecov/codecov-action@81cd2dc8148241f03f5839d295e000b8f761e378 # tag=v3
+        uses: codecov/codecov-action@81cd2dc8148241f03f5839d295e000b8f761e378 # tag=v3.1.0
         with:
           files: clover.xml
           flags: unittests
@@ -119,7 +119,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out source code
-        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3.0.2
 
       - name: Set up Node.js environment
         uses: actions/setup-node@eeb10cff27034e7acf239c5d29f62154018672fd # tag=v3.3.0
