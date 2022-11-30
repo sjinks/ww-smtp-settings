@@ -36,7 +36,6 @@
 		"phpunit/phpunit": "^9",
 		"psalm/plugin-phpunit": "^0.18.0",
 		"vimeo/psalm": "^5.0",
-		"wildwolf/phpunit7-php8-helper": "^1.0",
 		"wildwolf/wordpress-test-library-stubs": "^6.0",
 		"wp-coding-standards/wpcs": "^2.3",
 		"wp-phpunit/wp-phpunit": "^6.0",
