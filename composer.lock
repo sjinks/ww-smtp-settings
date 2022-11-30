@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dfa4794632da4b7d432e4ed4ef9adcf",
+    "content-hash": "062c7b43fdfb67d8ea26cc714f50f4f5",
     "packages": [
         {
             "name": "composer/installers",
@@ -2072,66 +2072,6 @@
                 }
             ],
             "time": "2020-10-26T13:16:10+00:00"
-        },
-        {
-            "name": "phpunit/php-token-stream",
-            "version": "3.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "9c1da83261628cb24b6a6df371b6e312b3954768"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/9c1da83261628cb24b6a6df371b6e312b3954768",
-                "reference": "9c1da83261628cb24b6a6df371b6e312b3954768",
-                "shasum": ""
-            },
-            "require": {
-                "ext-tokenizer": "*",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                }
-            ],
-            "description": "Wrapper around PHP's tokenizer extension.",
-            "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
-            "keywords": [
-                "tokenizer"
-            ],
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/php-token-stream/issues",
-                "source": "https://github.com/sebastianbergmann/php-token-stream/tree/3.1.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-            "abandoned": true,
-            "time": "2021-07-26T12:15:06+00:00"
         },
         {
             "name": "phpunit/phpunit",
@@ -4573,54 +4513,6 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
-        },
-        {
-            "name": "wildwolf/phpunit7-php8-helper",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sjinks/phpunit7-php8-helper.git",
-                "reference": "53815620189bcd13a3b8f7a3b58a5bf69c925fdc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sjinks/phpunit7-php8-helper/zipball/53815620189bcd13a3b8f7a3b58a5bf69c925fdc",
-                "reference": "53815620189bcd13a3b8f7a3b58a5bf69c925fdc",
-                "shasum": ""
-            },
-            "require": {
-                "phpunit/php-token-stream": "^3"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Volodymyr Kolesnykov",
-                    "email": "volodymyr@wildwolf.name"
-                }
-            ],
-            "description": "A helper for PHPUnit 7 to generate code coverage under PHP 8",
-            "keywords": [
-                "helper",
-                "php8",
-                "phpunit",
-                "phpunit code coverage",
-                "phpunit-code-coverage",
-                "phpunit7"
-            ],
-            "support": {
-                "issues": "https://github.com/sjinks/phpunit7-php8-helper/issues",
-                "source": "https://github.com/sjinks/phpunit7-php8-helper/tree/1.0.1"
-            },
-            "time": "2021-09-06T08:53:38+00:00"
         },
         {
             "name": "wildwolf/wordpress-test-library-stubs",
