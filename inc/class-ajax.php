@@ -23,11 +23,8 @@ final class Ajax {
 
 		add_action( 'wp_mail_failed', [ $this, 'wp_mail_failed' ], 10, 2 );
 
-		/** @psalm-suppress RedundantCast */
-		$to = ! empty( $_POST['to'] ) && is_scalar( $_POST['to'] ) ? sanitize_email( (string) $_POST['to'] ) : wp_get_current_user()->user_email;
-		/** @psalm-suppress RedundantCast */
+		$to      = ! empty( $_POST['to'] ) && is_scalar( $_POST['to'] ) ? sanitize_email( (string) $_POST['to'] ) : wp_get_current_user()->user_email;
 		$subject = ! empty( $_POST['subject'] ) && is_scalar( $_POST['subject'] ) ? sanitize_text_field( (string) $_POST['subject'] ) : Admin::get_test_subject();
-		/** @psalm-suppress RedundantCast */
 		$message = ! empty( $_POST['message'] ) && is_scalar( $_POST['message'] ) ? sanitize_textarea_field( (string) $_POST['message'] ) : Admin::get_test_body();
 
 		if ( wp_mail( $to, $subject, $message ) ) { // phpcs:ignore WordPressVIPMinimum.Functions.RestrictedFunctions.wp_mail_wp_mail
