@@ -37,13 +37,13 @@ class Test_Ajax extends WP_Ajax_UnitTestCase /* NOSONAR */ {
 
 		$mail = $mailer->get_sent();
 		self::assertIsObject( $mail );
-		self::assertObjectHasAttribute( 'to', $mail );
+		self::assertTrue( property_exists( $mail, 'to' ) );
 		self::assertIsArray( $mail->to );
 		self::assertArrayHasKey( 0, $mail->to );
 		self::assertIsArray( $mail->to[0] );
 		self::assertArrayHasKey( 0, $mail->to[0] );
-		self::assertObjectHasAttribute( 'subject', $mail );
-		self::assertObjectHasAttribute( 'body', $mail );
+		self::assertTrue( property_exists( $mail, 'subject' ) );
+		self::assertTrue( property_exists( $mail, 'body' ) );
 
 		self::assertSame( wp_get_current_user()->user_email, $mail->to[0][0] );
 		self::assertSame( Admin::get_test_subject(), $mail->subject );
