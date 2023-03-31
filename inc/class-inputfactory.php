@@ -44,6 +44,7 @@ final class InputFactory {
 			self::get_attributes( $args ) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		);
 
+		/** @psalm-var HelpArgs $args */
 		self::render_help( $args );
 	}
 
@@ -94,7 +95,6 @@ final class InputFactory {
 			self::get_attributes( $args ) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		);
 
-		/** @psalm-var HelpArgs $args */
 		self::render_help( $args );
 	}
 
