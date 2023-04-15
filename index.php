@@ -3,7 +3,7 @@
  * Plugin Name: WW SMTP Settings
  * Plugin URI: https://github.com/sjinks/ww-smtp-settings
  * Description: Send emails via SMTP
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Volodymyr Kolesnykov
  * Author URI: https://wildwolf.name/
  * License: MIT
