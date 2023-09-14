@@ -20,25 +20,37 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - { wp: 5.9.x,   ms: 'no',  php: '7.4', phpunit: 7 }
-          - { wp: 6.0.x,   ms: 'no',  php: '7.4', phpunit: 7 }
-          - { wp: latest,  ms: 'no',  php: '7.4', phpunit: 7 }
-          - { wp: nightly, ms: 'no',  php: '7.4', phpunit: 7 }
+          - { wp: 5.9.x,   ms: 'no',  php: '7.4' }
+          - { wp: 6.0.x,   ms: 'no',  php: '7.4' }
+          - { wp: 6.1.x,   ms: 'no',  php: '7.4' }
+          - { wp: 6.2.x,   ms: 'no',  php: '7.4' }
+          - { wp: latest,  ms: 'no',  php: '7.4' }
+          - { wp: nightly, ms: 'no',  php: '7.4' }
 
-          - { wp: 5.9.x,   ms: 'yes', php: '7.4', phpunit: 7 }
-          - { wp: 6.0.x,   ms: 'yes', php: '7.4', phpunit: 7 }
-          - { wp: latest,  ms: 'yes', php: '7.4', phpunit: 7 }
-          - { wp: nightly, ms: 'yes', php: '7.4', phpunit: 7 }
+          - { wp: 5.9.x,   ms: 'yes', php: '7.4' }
+          - { wp: 6.0.x,   ms: 'yes', php: '7.4' }
+          - { wp: 6.1.x,   ms: 'yes', php: '7.4' }
+          - { wp: 6.2.x,   ms: 'yes', php: '7.4' }
+          - { wp: latest,  ms: 'yes', php: '7.4' }
+          - { wp: nightly, ms: 'yes', php: '7.4' }
 
-          - { wp: latest,  ms: 'no',  php: '8.0', phpunit: 9, coverage: 'yes' }
-          - { wp: latest,  ms: 'yes', php: '8.0', phpunit: 9, coverage: 'yes' }
-          - { wp: nightly, ms: 'no',  php: '8.0', phpunit: 9 }
-          - { wp: nightly, ms: 'yes', php: '8.0', phpunit: 9 }
+          - { wp: latest,  ms: 'no',  php: '8.0', coverage: 'yes' }
+          - { wp: latest,  ms: 'yes', php: '8.0', coverage: 'yes' }
+          - { wp: nightly, ms: 'no',  php: '8.0' }
+          - { wp: nightly, ms: 'yes', php: '8.0' }
 
-          - { wp: latest,  ms: 'no',  php: '8.1', phpunit: 9, coverage: 'yes' }
-          - { wp: latest,  ms: 'yes', php: '8.1', phpunit: 9, coverage: 'yes' }
-          - { wp: nightly, ms: 'no',  php: '8.1', phpunit: 9, coverage: 'yes' }
-          - { wp: nightly, ms: 'yes', php: '8.1', phpunit: 9, coverage: 'yes' }
+          - { wp: latest,  ms: 'no',  php: '8.1', coverage: 'yes' }
+          - { wp: latest,  ms: 'yes', php: '8.1', coverage: 'yes' }
+          - { wp: nightly, ms: 'no',  php: '8.1', coverage: 'yes' }
+          - { wp: nightly, ms: 'yes', php: '8.1', coverage: 'yes' }
+
+          - { wp: latest,  ms: 'no',  php: '8.2' }
+          - { wp: latest,  ms: 'yes', php: '8.2' }
+          - { wp: nightly, ms: 'no',  php: '8.2' }
+          - { wp: nightly, ms: 'yes', php: '8.2' }
+
+          - { wp: nightly, ms: 'no',  php: '8.3' }
+          - { wp: nightly, ms: 'yes', php: '8.3' }
     services:
       mysql:
         image: mariadb:latest
@@ -74,11 +86,6 @@ jobs:
         env:
           fail-fast: 'true'
 
-      - name: Install PHPUnit
-        run: |
-          wget -q -O /usr/local/bin/phpunit "https://phar.phpunit.de/phpunit-${{ matrix.config.phpunit }}.phar"
-          chmod +x /usr/local/bin/phpunit
-
       - name: Install PHP dependencies
         uses: ramsey/composer-install@83af392bf5f031813d25e6fe4cd626cdba9a2df6 # 2.2.0
 
@@ -111,7 +118,7 @@ jobs:
           if [ "${{ steps.coverage.outputs.coverage }}" != 'none' ]; then
             OPTIONS="$OPTIONS --coverage-clover=clover.xml"
           fi
-          phpunit --order-by=random ${OPTIONS}
+          vendor/bin/phpunit --order-by=random ${OPTIONS}
 
       - name: Upload coverage report
         uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.1.4
