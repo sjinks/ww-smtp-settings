@@ -15,7 +15,6 @@ jobs:
   codestyle:
     name: Run code style check
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[ci skip]')"
     steps:
       - name: Check out source code
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
@@ -23,7 +22,6 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@e6f75134d35752277f093989e72e140eaa222f35 # 2.28.0
         with:
-          php-version: "8.0"
           coverage: none
         env:
           fail-fast: 'true'
