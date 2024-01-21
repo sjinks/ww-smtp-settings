@@ -42,7 +42,7 @@ final class Admin {
 	 */
 	public function admin_menu(): void {
 		$hook = add_options_page( __( 'SMTP Settings', 'ww-smtp' ), __( 'SMTP Settings', 'ww-smtp' ), 'manage_options', self::OPTIONS_MENU_SLUG, [ __CLASS__, 'options_page' ] );
-		if ( $hook ) {
+		if ( false !== $hook ) {
 			add_action( 'admin_enqueue_scripts', [ $this, 'admin_enqueue_scripts' ], 10, 1 );
 		}
 	}
