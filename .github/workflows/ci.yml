@@ -70,6 +70,9 @@ jobs:
             echo "::set-output name=ini::opcache.enable_cli=1, opcache.jit=tracing, opcache.jit_buffer_size=64M"
           fi
 
+      - name: Install svn
+        run: sudo apt-get update && sudo apt-get install -y subversion
+
       - name: Set up PHP
         uses: shivammathur/setup-php@9e72090525849c5e82e596468b86eb55e9cc5401 # 2.32.0
         with:
