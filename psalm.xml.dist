@@ -2,7 +2,6 @@
 <psalm
     errorLevel="1"
     resolveFromConfigFile="true"
-    phpVersion="7.4"
     findUnusedPsalmSuppress="true"
     findUnusedBaselineEntry="true"
     findUnusedCode="true"
@@ -16,6 +15,12 @@
         <directory name="tests"/>
     </projectFiles>
     <issueHandlers>
+        <ClassMustBeFinal>
+            <errorLevel type="suppress">
+                <directory name="tests"/>
+            </errorLevel>
+        </ClassMustBeFinal>
+        <MissingOverrideAttribute errorLevel="suppress"/>
         <PossiblyUnusedParam errorLevel="suppress"/>
         <PossiblyUnusedReturnValue errorLevel="suppress"/>
         <PossiblyUnusedMethod errorLevel="suppress"/>
