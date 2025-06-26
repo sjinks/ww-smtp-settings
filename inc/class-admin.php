@@ -98,7 +98,7 @@ final class Admin {
 	 */
 	public static function get_test_subject(): string {
 		// translators: 1 = blog name
-		return sprintf( __( 'Test Email from %s', 'ww-smtp' ), get_bloginfo( 'name' ) );
+		return (string) sprintf( __( 'Test Email from %s', 'ww-smtp' ), get_bloginfo( 'name' ) );
 	}
 
 	/**
@@ -106,6 +106,6 @@ final class Admin {
 	 */
 	public static function get_test_body(): string {
 		// translators: 1 = blog name, 2: blog URL
-		return sprintf( __( 'Test message from %1$s (%2$s)', 'ww-smtp' ), get_bloginfo( 'name' ), get_bloginfo( 'url' ) );
+		return (string) sprintf( __( 'Test message from %1$s (%2$s)', 'ww-smtp' ), get_bloginfo( 'name' ), get_bloginfo( 'url' ) );
 	}
 }
