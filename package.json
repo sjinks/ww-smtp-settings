@@ -2,7 +2,7 @@
   "name": "ww-smtp-settings",
   "description": "A WordPress plugin to send emails via SMTP",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "keywords": [],
   "author": "Volodymyr Kolesnykov <volodymyr@wildwolf.name> (https://wildwolf.name/)",
   "license": "MIT",
