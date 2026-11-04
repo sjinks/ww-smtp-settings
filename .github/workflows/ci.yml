@@ -19,13 +19,8 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - { wp: latest,  ms: 'no',  php: '8.1', coverage: 'yes' }
-          - { wp: latest,  ms: 'yes', php: '8.1', coverage: 'yes' }
-          - { wp: nightly, ms: 'no',  php: '8.1' }
-          - { wp: nightly, ms: 'yes', php: '8.1' }
-
-          - { wp: latest,  ms: 'no',  php: '8.2' }
-          - { wp: latest,  ms: 'yes', php: '8.2' }
+          - { wp: latest,  ms: 'no',  php: '8.2', coverage: 'yes' }
+          - { wp: latest,  ms: 'yes', php: '8.2', coverage: 'yes' }
           - { wp: nightly, ms: 'no',  php: '8.2' }
           - { wp: nightly, ms: 'yes', php: '8.2' }
 

@@ -2,5 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>sjinks/.github:renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "psalm/plugin-phpunit",
+        "vimeo/psalm"
+      ],
+      "groupName": "Psalm",
+      "separateMajorMinor": false
+    }
   ]
 }

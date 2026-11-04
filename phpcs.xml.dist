@@ -21,7 +21,7 @@
 		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
 	</rule>
 
-	<config name="testVersion" value="7.4-"/>
+	<config name="testVersion" value="8.2-"/>
 	<config name="minimum_supported_wp_version" value="6.2"/>
 	<config name="ignore_warnings_on_exit" value="true"/>
 </ruleset>
