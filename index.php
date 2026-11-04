@@ -4,6 +4,7 @@
  * Plugin URI: https://github.com/sjinks/ww-smtp-settings
  * Description: Send emails via SMTP
  * Version: 1.0.2
+ * Requires PHP: 8.2
  * Author: Volodymyr Kolesnykov
  * Author URI: https://wildwolf.name/
  * License: MIT

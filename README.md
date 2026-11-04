@@ -6,6 +6,8 @@
 
 A WordPress plugin to send emails via SMTP
 
+Requires PHP 8.2 or newer.
+
 ## Installation
 
 First, please install the plugin:

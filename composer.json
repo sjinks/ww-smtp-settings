@@ -23,7 +23,7 @@
 		]
 	},
 	"require": {
-		"php": "^8.1.0",
+		"php": "^8.2",
 		"composer/installers": "^2.0",
 		"wildwolf/singleton-trait": "^1.0.1"
 	},
@@ -33,7 +33,7 @@
 		"php-stubs/wordpress-stubs": "^7.0",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
 		"psalm/plugin-phpunit": "^0.21.0",
-		"vimeo/psalm": "^6.0",
+		"vimeo/psalm": "^7.0",
 		"wildwolf/wordpress-test-library-stubs": "^6.0",
 		"wp-coding-standards/wpcs": "^3.0",
 		"wp-phpunit/wp-phpunit": "^7.0",
@@ -42,7 +42,7 @@
 	"config": {
 		"sort-packages": true,
 		"platform": {
-			"php": "8.1.31"
+			"php": "8.2.27"
 		},
 		"allow-plugins": {
 			"composer/installers": true,
