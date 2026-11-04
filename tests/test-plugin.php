@@ -116,14 +116,7 @@ class Test_Plugin extends WP_UnitTestCase /* NOSONAR */ {
 		self::assertSame( $settings['from_name'], $mailer->FromName );
 		self::assertSame( $settings['from_email'], $mailer->From );
 
-		$reply_to = $mailer->getReplyToAddresses();
-		self::assertCount( 1, $reply_to );
-		self::assertArrayHasKey( $settings['replyto_email'], $reply_to );
-		self::assertIsArray( $reply_to[ $settings['replyto_email'] ] );
-		self::assertCount( 2, $reply_to[ $settings['replyto_email'] ] );
-		self::assertArrayHasKey( 0, $reply_to[ $settings['replyto_email'] ] );
-		self::assertArrayHasKey( 1, $reply_to[ $settings['replyto_email'] ] );
-		self::assertSame( $settings['replyto_email'], $reply_to[ $settings['replyto_email'] ][0] );
-		self::assertSame( $settings['replyto_name'], $reply_to[ $settings['replyto_email'] ][1] );
+		$reply_to = array_values( $mailer->getReplyToAddresses() );
+		self::assertSame( [ [ $settings['replyto_email'], $settings['replyto_name'] ] ], $reply_to );
 	}
 }
