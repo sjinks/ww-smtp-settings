@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c5fd4ad6976835be7a41af360a65e130",
+    "content-hash": "97d629fabd46ccc2fc84ce31c1e97e54",
     "packages": [
         {
             "name": "composer/installers",
@@ -1757,24 +1757,24 @@
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.9.11",
+            "version": "7.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "819dd5acbf39cde7c15364c5b9f2b1a90295ff5d"
+                "reference": "36ac9875ff3f09afe1d91f996bfac0ac261922ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/819dd5acbf39cde7c15364c5b9f2b1a90295ff5d",
-                "reference": "819dd5acbf39cde7c15364c5b9f2b1a90295ff5d",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/36ac9875ff3f09afe1d91f996bfac0ac261922ed",
+                "reference": "36ac9875ff3f09afe1d91f996bfac0ac261922ed",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": ">=7.2.24"
+                "php": ">=7.4"
             },
             "provide": {
-                "wordpress/core-implementation": "6.9.11"
+                "wordpress/core-implementation": "7.1.4"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -1801,7 +1801,8 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2026-10-28T19:48:30+00:00"
+            "time": "2026-10-28T19:49:26+00:00",
+            "published-time": "2026-10-28T19:49:51+00:00"
         },
         {
             "name": "kelunik/certificate",
