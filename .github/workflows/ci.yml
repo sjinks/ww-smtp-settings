@@ -33,6 +33,16 @@ jobs:
           - { wp: latest,  ms: 'yes', php: '8.3' }
           - { wp: nightly, ms: 'no',  php: '8.3' }
           - { wp: nightly, ms: 'yes', php: '8.3' }
+
+          - { wp: latest,  ms: 'no',  php: '8.4' }
+          - { wp: latest,  ms: 'yes', php: '8.4' }
+          - { wp: nightly, ms: 'no',  php: '8.4' }
+          - { wp: nightly, ms: 'yes', php: '8.4' }
+
+          - { wp: latest,  ms: 'no',  php: '8.5' }
+          - { wp: latest,  ms: 'yes', php: '8.5' }
+          - { wp: nightly, ms: 'no',  php: '8.5' }
+          - { wp: nightly, ms: 'yes', php: '8.5' }
     services:
       mysql:
         image: mariadb:latest@sha256:f4054da26e3a9dd6c8b5cc97363e544408b15c0fb369d7359c25dc04826eb6e1
