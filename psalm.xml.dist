@@ -20,6 +20,17 @@
                 <directory name="tests"/>
             </errorLevel>
         </ClassMustBeFinal>
+        <!-- Psalm 7 rejects docblocks in these third-party generated stubs. -->
+        <InvalidDocblock>
+            <errorLevel type="suppress">
+                <file name="vendor/php-stubs/wordpress-stubs/wordpress-stubs.php"/>
+            </errorLevel>
+        </InvalidDocblock>
+        <MissingDocblockType>
+            <errorLevel type="suppress">
+                <file name="vendor/wildwolf/wordpress-test-library-stubs/wordpress-test-library-stubs.php"/>
+            </errorLevel>
+        </MissingDocblockType>
         <MissingOverrideAttribute errorLevel="suppress"/>
         <PossiblyUnusedParam errorLevel="suppress"/>
         <PossiblyUnusedReturnValue errorLevel="suppress"/>
